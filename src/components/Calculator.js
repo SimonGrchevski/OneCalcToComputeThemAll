@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Input from './input';
-import Button from './Button';
+import ButtonList from './ButtonList';
 
 export default class Calculator extends React.Component {
   constructor(props) {
@@ -9,11 +10,16 @@ export default class Calculator extends React.Component {
   }
 
   render() {
+    const { buttons } = this.props;
     return (
-      <div>
+      <div className="calc-div">
         <Input />
-        <Button value="Button" className="btn" />
+        <ButtonList buttons={buttons} />
       </div>
     );
   }
 }
+
+Calculator.propTypes = {
+  buttons: PropTypes.instanceOf(Array).isRequired,
+};

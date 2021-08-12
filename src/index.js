@@ -1,6 +1,6 @@
 // import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Calculator from './components/Calculator';
+import App from './components/App';
 
-ReactDOM.render(<Calculator />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
