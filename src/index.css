@@ -8,6 +8,13 @@
 
 li {
   list-style-type: none;
+  background: rgba(128, 128, 128, 0.111);
+  outline: 0.2px solid rgba(128, 128, 128, 0.659);
+  width: 25%;
+}
+
+li:nth-last-child(3) {
+  width: 50%;
 }
 
 input {
@@ -25,17 +32,6 @@ input[type=text] {
   font-size: 25px;
 }
 
-li {
-  background: rgba(128, 128, 128, 0.111);
-  outline: 0.2px solid rgba(128, 128, 128, 0.659);
-  width: 25%;
-}
-
-li:nth-last-child(3)
-{
-  width: 50%;
-}
-
 .calc-inp {
   background: rgba(128, 128, 128, 0.624);
   height: 50px;
@@ -47,7 +43,7 @@ li:nth-last-child(3)
 }
 
 .calc-div {
-  width:50%;
+  width: 50%;
   margin: 0 auto;
   padding-top: 50px;
 }
