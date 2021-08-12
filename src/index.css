@@ -28,28 +28,17 @@ input[type=text] {
 li {
   background: rgba(128, 128, 128, 0.111);
   outline: 0.2px solid rgba(128, 128, 128, 0.659);
+  width: 25%;
 }
 
-li:nth-child(4n) input[type=button] {
-  background-color: orange;
-}
-
-li:last-child input[type=button] {
-  background-color: orange;
+li:nth-last-child(3)
+{
+  width: 50%;
 }
 
 .calc-inp {
   background: rgba(128, 128, 128, 0.624);
   height: 50px;
-
-}
-
-.w-25 {
-  width: 25%;
-}
-
-.w-50 {
-  width: 50%;
 }
 
 .flex {
@@ -61,4 +50,8 @@ li:last-child input[type=button] {
   width:50%;
   margin: 0 auto;
   padding-top: 50px;
+}
+
+.btn-orange {
+  background-color: orange;
 }

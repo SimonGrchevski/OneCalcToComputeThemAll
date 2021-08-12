@@ -11,9 +11,10 @@ export default class ButtonList extends React.Component {
   render() {
     const { buttons } = this.props;
     const btns = buttons.map((btn) => (
-      <li key={btn.content} className={btn.className}>
+      <li key={btn.content}>
         <Button
           value={btn.content}
+          className={btn.className}
         />
       </li>
     ));
