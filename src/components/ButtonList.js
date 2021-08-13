@@ -9,12 +9,13 @@ export default class ButtonList extends React.Component {
   }
 
   render() {
-    const { buttons } = this.props;
+    const { buttons, handleClick } = this.props;
     const btns = buttons.map((btn) => (
       <li key={btn.content}>
         <Button
           value={btn.content}
           className={btn.className}
+          handleClick={handleClick}
         />
       </li>
     ));
@@ -28,4 +29,5 @@ export default class ButtonList extends React.Component {
 
 ButtonList.propTypes = {
   buttons: PropTypes.instanceOf(Array).isRequired,
+  handleClick: PropTypes.func.isRequired,
 };

@@ -26,13 +26,24 @@ export default class App extends React.Component {
         { content: '.', className: 'btn' },
         { content: '=', className: 'btn btn-orange' },
       ],
+      display: '0',
     };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(inp) {
+    this.setState({ display: inp });
   }
 
   render() {
-    const { buttons } = this.state;
+    const { buttons, display } = this.state;
     return (
-      <Calculator buttons={buttons} />
+      <Calculator
+        buttons={buttons}
+        click={this.handleClick}
+        display={display}
+      />
     );
   }
 }
