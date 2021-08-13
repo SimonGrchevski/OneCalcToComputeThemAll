@@ -24,7 +24,7 @@ export default class App extends React.Component {
     return (
       <Calculator
         click={this.handleClick}
-        display={total || next || '0'}
+        display={next || total || '0'}
       />
     );
   }
