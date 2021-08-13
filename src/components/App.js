@@ -1,5 +1,6 @@
 import React from 'react';
 import Calculator from './Calculator';
+import calculate from '../logic/calculate';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -26,23 +27,28 @@ export default class App extends React.Component {
         { content: '.', className: 'btn' },
         { content: '=', className: 'btn btn-orange' },
       ],
-      display: '0',
+      calc: {
+        total: null,
+        next: null,
+        operation: null,
+      },
     };
 
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(inp) {
-    this.setState({ display: inp });
+    const { calc } = this.state;
+    this.setState(() => ({ calc: calculate(calc, inp) }));
   }
 
   render() {
-    const { buttons, display } = this.state;
+    const { buttons, calc } = this.state;
     return (
       <Calculator
         buttons={buttons}
         click={this.handleClick}
-        display={display}
+        display={calc.next || calc.total || '0'}
       />
     );
   }
