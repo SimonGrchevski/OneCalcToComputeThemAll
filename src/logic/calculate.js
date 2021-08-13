@@ -62,9 +62,10 @@ export default function calculate(obj, buttonName) {
     }
     if (obj.next) {
       return {
-        next: Big(obj.next)
-          .div(Big('100'))
+        next: null,
+        total: obj.next
           .toString(),
+        operation: buttonName,
       };
     }
     return {};
