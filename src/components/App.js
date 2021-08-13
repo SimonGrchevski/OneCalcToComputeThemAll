@@ -10,12 +10,12 @@ export default class App extends React.Component {
         { content: 'AC', className: 'btn' },
         { content: '+/-', className: 'btn' },
         { content: '%', className: 'btn' },
-        { content: '/', className: 'btn btn-orange' },
+        { content: '÷', className: 'btn btn-orange' },
         { content: '7', className: 'btn' },
         { content: '8', className: 'btn' },
         { content: '9', className: 'btn' },
         { content: 'X', className: 'btn btn-orange' },
-        { content: '4', className: 'btn ' },
+        { content: '4', className: 'btn' },
         { content: '5', className: 'btn' },
         { content: '6', className: 'btn' },
         { content: '-', className: 'btn btn-orange' },
@@ -37,9 +37,11 @@ export default class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(inp) {
+  handleClick(btnName) {
     const { calc } = this.state;
-    this.setState(() => ({ calc: calculate(calc, inp) }));
+    this.setState({
+      calc: calculate(calc, btnName),
+    });
   }
 
   render() {
