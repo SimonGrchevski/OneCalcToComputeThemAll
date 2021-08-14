@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Button from './Button';
 
-export default function ButtonList(props) {
+const ButtonList = (props) => {
   const buttons = [
     { content: 'AC', className: 'btn' },
     { content: '+/-', className: 'btn' },
@@ -44,8 +44,10 @@ export default function ButtonList(props) {
       {createButtons}
     </ul>
   );
-}
+};
 
 ButtonList.propTypes = {
   handleClick: PropTypes.func.isRequired,
 };
+
+export default ButtonList;
