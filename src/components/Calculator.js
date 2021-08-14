@@ -10,16 +10,18 @@ export default class Calculator extends React.Component {
   }
 
   render() {
-    const { buttons } = this.props;
+    const { display, click } = this.props;
+
     return (
       <div className="calc-div">
-        <Input />
-        <ButtonList buttons={buttons} />
+        <Input display={display} />
+        <ButtonList handleClick={click} />
       </div>
     );
   }
 }
 
 Calculator.propTypes = {
-  buttons: PropTypes.instanceOf(Array).isRequired,
+  display: PropTypes.string.isRequired,
+  click: PropTypes.func.isRequired,
 };

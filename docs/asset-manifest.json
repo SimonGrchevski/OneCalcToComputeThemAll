@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/oneCalcToComputeThemAll/static/css/main.c6930d8c.chunk.css",
-    "main.js": "/oneCalcToComputeThemAll/static/js/main.54da67b6.chunk.js",
-    "main.js.map": "/oneCalcToComputeThemAll/static/js/main.54da67b6.chunk.js.map",
+    "main.css": "/oneCalcToComputeThemAll/static/css/main.14b0d0a3.chunk.css",
+    "main.js": "/oneCalcToComputeThemAll/static/js/main.8bfb6e95.chunk.js",
+    "main.js.map": "/oneCalcToComputeThemAll/static/js/main.8bfb6e95.chunk.js.map",
     "runtime-main.js": "/oneCalcToComputeThemAll/static/js/runtime-main.3a94f067.js",
     "runtime-main.js.map": "/oneCalcToComputeThemAll/static/js/runtime-main.3a94f067.js.map",
-    "static/js/2.588ea142.chunk.js": "/oneCalcToComputeThemAll/static/js/2.588ea142.chunk.js",
-    "static/js/2.588ea142.chunk.js.map": "/oneCalcToComputeThemAll/static/js/2.588ea142.chunk.js.map",
+    "static/js/2.dd30bc47.chunk.js": "/oneCalcToComputeThemAll/static/js/2.dd30bc47.chunk.js",
+    "static/js/2.dd30bc47.chunk.js.map": "/oneCalcToComputeThemAll/static/js/2.dd30bc47.chunk.js.map",
     "index.html": "/oneCalcToComputeThemAll/index.html",
-    "static/css/main.c6930d8c.chunk.css.map": "/oneCalcToComputeThemAll/static/css/main.c6930d8c.chunk.css.map",
-    "static/js/2.588ea142.chunk.js.LICENSE.txt": "/oneCalcToComputeThemAll/static/js/2.588ea142.chunk.js.LICENSE.txt"
+    "static/css/main.14b0d0a3.chunk.css.map": "/oneCalcToComputeThemAll/static/css/main.14b0d0a3.chunk.css.map",
+    "static/js/2.dd30bc47.chunk.js.LICENSE.txt": "/oneCalcToComputeThemAll/static/js/2.dd30bc47.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3a94f067.js",
-    "static/js/2.588ea142.chunk.js",
-    "static/css/main.c6930d8c.chunk.css",
-    "static/js/main.54da67b6.chunk.js"
+    "static/js/2.dd30bc47.chunk.js",
+    "static/css/main.14b0d0a3.chunk.css",
+    "static/js/main.8bfb6e95.chunk.js"
   ]
 }
