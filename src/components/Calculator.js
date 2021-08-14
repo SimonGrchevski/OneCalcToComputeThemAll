@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Input from './input';
 import ButtonList from './ButtonList';
 
-export default function Calculator(props) {
+const Calculator = (props) => {
   const { display, click } = props;
 
   return (
@@ -12,9 +12,11 @@ export default function Calculator(props) {
       <ButtonList handleClick={click} />
     </div>
   );
-}
+};
 
 Calculator.propTypes = {
   display: PropTypes.string.isRequired,
   click: PropTypes.func.isRequired,
 };
+
+export default Calculator;
