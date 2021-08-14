@@ -1,29 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Input extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Input = (props) => {
+  const { display } = props;
 
-  handleChange = (e) => {
-    const { display } = this.props;
+  function handleChange(e) {
     e.target.value = display;
   }
 
-  render() {
-    const { display } = this.props;
-    return (
-      <input type="text" className="calc-inp" value={display} onChange={this.handleChange} />
-    );
-  }
-}
+  return (
+    <input type="text" className="calc-inp" value={display} onChange={handleChange} />
+  );
+};
 
 Input.propTypes = {
   display: PropTypes.string.isRequired,
 };
 
-Input.defaultProp = {
-  value: '0',
-};
+export default Input;
