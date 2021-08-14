@@ -1,31 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.handleClick = this.handleClick.bind(this);
-  }
+export default function Button(props) {
+  const { value, className, handleClick } = props;
 
-  handleClick() {
-    const { handleClick, value } = this.props;
+  function clickHandler() {
     handleClick(value);
   }
 
-  render() {
-    const { value, className } = this.props;
-
-    return (
-      <input
-        type="button"
-        value={value}
-        className={className}
-        onClick={this.handleClick}
-      />
-
-    );
-  }
+  return (
+    <input
+      type="button"
+      value={value}
+      className={className}
+      onClick={clickHandler}
+    />
+  );
 }
 
 Button.propTypes = {
