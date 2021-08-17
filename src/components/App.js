@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Calculator from './Calculator';
 import calculate from '../logic/calculate';
 import MainContent from './MainContent';
@@ -24,12 +25,21 @@ const App = () => {
   return (
     <div>
       <Header />
-      <MainContent />
-      <Calculator
-        click={handleClick}
-        display={state.next || state.total || '0'}
-      />
-      <Quote />
+      <Switch>
+        <Route path="/Main">
+          <MainContent />
+        </Route>
+        <Route path="/Calculator">
+          <Calculator
+            click={handleClick}
+            display={state.next || state.total || '0'}
+          />
+        </Route>
+        <Route>
+          <Quote path="/Quote" />
+        </Route>
+      </Switch>
+
     </div>
   );
 };
