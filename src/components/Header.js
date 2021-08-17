@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => (
-  <header>
+  <header className="flex">
     <div className="Logo">
       <h1>One Calc to Compute them ALL</h1>
     </div>
-    <nav>
+    <nav className="flex">
       <li>
         <Link to="/Main">Home</Link>
       </li>

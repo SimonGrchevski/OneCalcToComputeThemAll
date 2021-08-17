@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.665);
+}
+.flex {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.494);
+  color: rgba(255, 255, 255, 0.665);
+}
+
+nav {
+  width: 30%;
+  
+}

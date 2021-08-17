@@ -1,0 +1,4 @@
+.main-content,
+.main-content > p {
+  padding: 20px 0;
+}
