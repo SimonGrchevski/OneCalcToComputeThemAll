@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Calculator from './Calculator';
 import calculate from '../logic/calculate';
+import MainContent from './MainContent';
+import Header from './Header';
+import Quote from './Quote';
 
 const App = () => {
   const [state, setState] = useState(
@@ -19,10 +22,15 @@ const App = () => {
   };
 
   return (
-    <Calculator
-      click={handleClick}
-      display={state.next || state.total || '0'}
-    />
+    <div>
+      <Header />
+      <MainContent />
+      <Calculator
+        click={handleClick}
+        display={state.next || state.total || '0'}
+      />
+      <Quote />
+    </div>
   );
 };
 
