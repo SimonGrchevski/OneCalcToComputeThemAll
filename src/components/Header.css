@@ -1,6 +1,5 @@
 header a {
   color: #f3c969;
-
 }
 
 header {
@@ -13,8 +12,8 @@ header {
 }
 
 header h1 {
-    color: #f3ca69c0;
-    font-size: 25px;
+  color: #f3ca69c0;
+  font-size: 25px;
 }
 
 nav {
@@ -22,5 +21,5 @@ nav {
 }
 
 nav li {
-  padding:0 20px;
+  padding: 0 20px;
 }

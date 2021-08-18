@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   justify-content: space-around;
   width: 100%;
 }
@@ -33,14 +33,12 @@
   width: 50%;
 }
 
-.btn-list > *
-{
+.btn-list > * {
   border: none;
   outline: none;
 }
 
-.btn-list
-{
+.btn-list {
   border: none;
   outline: none;
 }
@@ -59,7 +57,6 @@ input[type=text] {
   color: #f2f2f2;
   font-size: 25px;
 }
-
 
 .btn-orange {
   background-color: #f3c969;
