@@ -1,10 +1,18 @@
-
-.calc-div {
-  width: 50%;
+.calcWrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  justify-content: space-around;
+  width: 100%;
+}
+
+.calcHeader {
+  color: #f3c969;
+}
+
+.calc-div {
+  width: 50%;
   border: 1px solid #1c0118;
 }
 

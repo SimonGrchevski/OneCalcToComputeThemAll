@@ -9,7 +9,7 @@ const Header = () => (
     </div>
     <nav className="flex">
       <li>
-        <Link to="/Main">Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <Link to="/Calculator">Calculator</Link>

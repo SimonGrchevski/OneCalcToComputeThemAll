@@ -26,7 +26,7 @@ const App = () => {
     <div>
       <Header />
       <Switch>
-        <Route path="/Main">
+        <Route exact path="/">
           <MainContent />
         </Route>
         <Route path="/Calculator">
