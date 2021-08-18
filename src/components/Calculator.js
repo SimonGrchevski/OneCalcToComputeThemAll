@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Input from './input';
 import ButtonList from './ButtonList';
+import './Calculator.css';
 
 const Calculator = (props) => {
   const { display, click } = props;

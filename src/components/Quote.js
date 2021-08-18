@@ -1,7 +1,8 @@
 import React from 'react';
+import './Quote.css';
 
 const Quote = () => (
-  <div>
+  <div className="quote-wrap">
     <p>
       There is a fine line between Numerator and Denominator.
     </p>

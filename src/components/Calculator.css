@@ -1,0 +1,58 @@
+
+.calc-div {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid #1c0118;
+}
+
+.calc-div li {
+  list-style-type: none;
+  background: rgba(128, 128, 128, 0.111);
+  outline: 0.2px solid rgba(128, 128, 128, 0.659);
+  width: 25%;
+}
+
+.calc-inp {
+  background: #1c0118;
+  border: 1px solid #1c0118;
+  height: 50px;
+}
+
+.calc-div li:nth-last-child(3) {
+  width: 50%;
+}
+
+.btn-list > *
+{
+  border: none;
+  outline: none;
+}
+
+.btn-list
+{
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 100%;
+}
+
+input[type=button] {
+  height: 50px;
+  outline: transparent;
+}
+
+input[type=text] {
+  text-align: right;
+  color: #f2f2f2;
+  font-size: 25px;
+}
+
+
+.btn-orange {
+  background-color: #f3c969;
+}

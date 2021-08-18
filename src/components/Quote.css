@@ -1,0 +1,4 @@
+.quote-wrap,
+.quote-wrap > p {
+  padding: 10px 0;
+}
