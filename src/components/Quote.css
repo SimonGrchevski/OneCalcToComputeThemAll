@@ -1,0 +1,15 @@
+.quote-wrap p {
+  color: #ffe1a8cb;
+}
+
+.quote-wrap {
+  padding-top: 100px;
+}
+
+.quote-wrap > div {
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}

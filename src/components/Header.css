@@ -1,0 +1,25 @@
+header a {
+  color: #f3c969;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background: #1c0118;
+  height: 100px;
+  border-bottom: 1px solid #f3ca694a;
+}
+
+header h1 {
+  color: #f3ca69c0;
+  font-size: 25px;
+}
+
+nav {
+  width: 30%;
+}
+
+nav li {
+  padding: 0 20px;
+}
